@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohamed Hesham | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #2980b9;
+      --bg: #f5f7fa;
+      --white: #fff;
+      --gray: #7f8c8d;
+    }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+    }
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 40px 0 20px 0;
+      text-align: center;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+      padding: 40px 30px;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+      font-weight: 700;
+    }
+    .about-details {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #2980b9;
+      margin-right: 32px;
+      box-shadow: 0 2px 12px rgba(44, 62, 80, 0.15);
+      background: #fff;
+    }
+    .about-info {
+      flex: 2;
+    }
+    .about-links a {
+      margin-right: 18px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .about-links a:hover {
+      text-decoration: underline;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 12px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #1a5a85;
+    }
+    .exp-list, .proj-list, .skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .exp-list li, .proj-list li {
+      margin-bottom: 28px;
+    }
+    .exp-role, .proj-title {
+      font-size: 1.15em;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    .exp-meta, .proj-meta {
+      color: var(--gray);
+      margin-bottom: 6px;
+      font-size: 0.98em;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .skills-list li {
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 1em;
+    }
+    .resume-iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      margin-top: 18px;
+      border-radius: 8px;
+      box-shadow: 0 1px 8px rgba(44, 62, 80, 0.10);
+    }
+    @media (max-width: 700px) {
+      section {
+        padding: 24px 8px;
+      }
+      .about-details {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .profile-img {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+      .resume-iframe {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mohamed Hesham</h1>
+    <p>Technical Support Graduate Assistant | Software Engineer | Network Shift Leader</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-details">
+      <img src="HeshamPhotos.PNG" alt="Mohamed Hesham Profile Photo" class="profile-img">
+      <div class="about-info">
+        <p>
+          Hello! I'm Mohamed Hesham, a graduate student at Texas State University (GPA: 3.91) with a passion for building scalable software and automation solutions. My experience spans technical support, software engineering, and network operations, with a strong foundation in Python, distributed systems, and cloud APIs.
+        </p>
+        <div class="about-links">
+          <a href="mailto:hesham@txstate.edu">hesham@txstate.edu</a>
+          <a href="tel:5128442968">512-844-2968</a>
+          <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+          <a href="https://github.com/YOUR-GITHUB" target="_blank">GitHub</a>
+        </div>
+        <div>
+          <strong>Location:</strong> San Marcos, TX
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="exp-list">
+      <li>
+        <div class="exp-role">Technical Support Graduate Assistant</div>
+        <div class="exp-meta">Texas State University, San Marcos, TX | Jan 2024 – Present</div>
+        <ul>
+          <li>Provided technical support to students and staff, resolving hardware, software, and OS-related issues.</li>
+          <li>Performed system migrations, OS re-imaging, software installations, and diagnosed BSOD/hardware issues.</li>
+          <li>Developed Python and SQL automation tools to streamline IT processes, reducing manual workload by 40%.</li>
+          <li>Collaborated on hardware reviews and deployed optimized tools across IT systems in a Windows environment.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="exp-role">Software Engineer Intern</div>
+        <div class="exp-meta">J&M Jewelry, San Marcos, TX | Jan 2025 – Apr 2025</div>
+        <ul>
+          <li>Built a real-time synchronization pipeline from SQL to Wix CMS, reducing inventory data inconsistency by 25%.</li>
+          <li>Improved database performance by 30% via advanced query optimization and indexing.</li>
+          <li>Engineered a data pipeline (Python, SQL) to automate vendor inventory management and CMS updates, improving data consistency and scalability.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="exp-role">Network Shift Leader</div>
+        <div class="exp-meta">Orange Business, Cairo, Egypt | Dec 2019 – Dec 2023</div>
+        <ul>
+          <li>Led a team of engineers, overseeing operations, optimizing infrastructure, and ensuring VoIP availability.</li>
+          <li>Designed and implemented SIP routing strategies, reducing latency and enhancing call quality.</li>
+          <li>Developed automation scripts to streamline VoIP diagnostics, improving efficiency and reducing workload.</li>
+          <li>Analyzed and optimized LAN/WAN topologies, integrating QoS to enhance data traffic efficiency and scalability.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="proj-list">
+      <li>
+        <div class="proj-title">Shop Scanner – Developer</div>
+        <div class="proj-meta">Mobile App | Google Cloud Vision API | Accessibility</div>
+        <ul>
+          <li>Designed an accessible UI for visually impaired users with intuitive navigation.</li>
+          <li>Built a mobile app using Google Cloud Vision API for real-time object detection.</li>
+          <li>Integrated text-to-speech for auditory feedback, enabling hands-free awareness.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="proj-title">Diving Planner – Developer</div>
+        <div class="proj-meta">Full-Stack Web App | React, Flask | API Integration</div>
+        <ul>
+          <li>Developed a full-stack web application integrating real-time APIs and dynamic data pipelines.</li>
+          <li>Integrated OpenWeather, StormGlass, and ChatGPT APIs to match site conditions with diver experience.</li>
+          <li>Implemented dynamic UI updates, form validation, and REST API design for better user experience.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="proj-title">HPC & Distributed Computing – Developer</div>
+        <div class="proj-meta">Distributed ML | Python, Dask, XGBoost</div>
+        <ul>
+          <li>Designed and automated distributed machine learning workflows, focusing on scalable infrastructure and performance optimization.</li>
+          <li>Used Git for version control to manage code and track work.</li>
+          <li>Optimized performance through parallel computing and improved multi-node job scheduling.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Certifications</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>C</li>
+      <li>JavaScript</li>
+      <li>MATLAB</li>
+      <li>SQL</li>
+      <li>HTML/CSS</li>
+      <li>Linux</li>
+      <li>Git</li>
+      <li>Google Cloud APIs</li>
+      <li>React.js</li>
+      <li>Flask</li>
+      <li>OpenMP</li>
+      <li>MPI</li>
+      <li>Dask</li>
+    </ul>
+    <br>
+    <strong>Certifications:</strong>
+    <ul>
+      <li>Intermediate Software Engineering (CodePath, Aug 2024)</li>
+      <li>CS50 (Harvard, Dec 2023)</li>
+      <li>Certified ScrumMaster (Jun 2023)</li>
+      <li>French Delf B2 Diploma (May 2021)</li>
+    </ul>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="Mohamed_Hesham_Resume.pdf" target="_blank" class="btn">Download Resume (PDF)</a>
+    <iframe class="resume-iframe" src="Mohamed_Hesham_Resume.pdf"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:hesham@txstate.edu">hesham@txstate.edu</a></p>
+    <p>Phone: <a href="tel:5128442968">512-844-2968</a></p>
+    <p>Location: San Marcos, TX</p>
+    <p>
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/YOUR-GITHUB" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer style="text-align:center; padding:18px 0; background:var(--primary); color:#fff; margin-top:40px;">
+    &copy; 2025 Mohamed Hesham
+  </footer>
+</body>
+</html>
